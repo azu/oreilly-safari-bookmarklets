@@ -123,6 +123,18 @@
         }
         head.appendChild(s);
     }
+
+    // notranslate class to
+    (() => {
+        // title
+        document.querySelector("title").classList.add("notranslate");
+        // pre tag
+        Array.from(document.querySelectorAll("pre"), pre => {
+            pre.classList.add("notranslate");
+        });
+        // toc
+        document.querySelector(".tocList").classList.add("notranslate");
+    })();
     // Bootstrap
     setTimeout(() => {
         translate();
@@ -133,7 +145,7 @@
         bottom: 0;
     }
     `;
-    
+
     addcss(CSS);
-    
+
 })();

@@ -96,14 +96,14 @@
         }
     });
     document.addEventListener("keydown", (event) => {
-        if (event.key === "ArrowRight" || event.which == 37) {
+        if (event.key === "ArrowRight" || event.which === 37) {
             isChangedArrow = true;
             restoreTranslate();
             requestAnimationFrame(() => {
                 goToNext();
             });
             event.preventDefault();
-        } else if (event.key === "ArrowLeft" || event.which == 39) {
+        } else if (event.key === "ArrowLeft" || event.which === 39) {
             isChangedArrow = true;
             restoreTranslate();
             requestAnimationFrame(() => {

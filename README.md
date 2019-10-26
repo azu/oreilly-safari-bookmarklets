@@ -1,6 +1,6 @@
 # oreilly-safari-bookmarklets [![Netlify Status](https://api.netlify.com/api/v1/badges/4739c5ea-40ce-4b72-9420-25f6a17269df/deploy-status)](https://app.netlify.com/sites/oreilly-safari-bookmarklets/deploys)
 
-A bookmarklet for Oreilly's safari.
+A bookmarklet for Oreilly safari(https://learning.oreilly.com/).
 
 - Google Translate Integration
 

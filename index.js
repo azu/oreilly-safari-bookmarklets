@@ -91,7 +91,7 @@
         if (isChangedArrow) {
             setTimeout(() => {
                 translate();
-            }, 1000);
+            }, 1500);
             isChangedArrow = false;
         }
     });

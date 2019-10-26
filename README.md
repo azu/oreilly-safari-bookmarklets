@@ -1,16 +1,14 @@
 # oreilly-safari-bookmarklets
 
+A bookmarklet for Oreilly's safari.
 
+- Google Translate Integration
 
 ## Install
 
-Install with [npm](https://www.npmjs.com/):
+- Visit <> 
 
-    npm install oreilly-safari-bookmarklets
-
-## Usage
-
-- [ ] Write usage instructions
+Use it as bookmarklet
 
 ## Changelog
 

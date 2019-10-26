@@ -1,0 +1,52 @@
+{
+  "name": "oreilly-safari-bookmarklets",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/azu/oreilly-safari-bookmarklets",
+  "bugs": {
+    "url": "https://github.com/azu/oreilly-safari-bookmarklets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/oreilly-safari-bookmarklets.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "lib/oreilly-safari-bookmarklets.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "bookmarklet": "mkdir -p public/ && bookmarklet --demo index.js public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
+  },
+  "devDependencies": {
+    "bookmarklet": "^1.0.4",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

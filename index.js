@@ -127,13 +127,15 @@
     // notranslate class to
     (() => {
         // title
-        document.querySelector("title").classList.add("notranslate");
+        const title = document.querySelector("title");
+        title && title.classList.add("notranslate");
         // pre tag
         Array.from(document.querySelectorAll("pre"), pre => {
             pre.classList.add("notranslate");
         });
         // toc
-        document.querySelector(".tocList").classList.add("notranslate");
+        const toc = document.querySelector(".tocList");
+        toc && toc.classList.add("notranslate");
     })();
     // Bootstrap
     setTimeout(() => {

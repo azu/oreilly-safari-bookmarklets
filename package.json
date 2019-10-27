@@ -23,7 +23,9 @@
     "test": "test"
   },
   "scripts": {
-    "bookmarklet": "mkdir -p public/ && bookmarklet --demo index.js public/index.html",
+    "bookmarklet": "npm run bookmarklet:safari && npm run bookmarklet:google",
+    "bookmarklet:safari": "mkdir -p public/ && bookmarklet --demo index.js public/index.html",
+    "bookmarklet:google": "mkdir -p public/ && bookmarklet --demo src/google-translation.js public/google.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
   },
